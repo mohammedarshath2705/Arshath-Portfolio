@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Mohammed Arshath | Portfolio',
   description: 'Full Stack Developer Portfolio',
+  icons : {
+    icon : "/ma.png",
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
