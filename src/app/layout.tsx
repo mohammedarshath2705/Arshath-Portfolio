@@ -20,7 +20,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${inter.className} relative`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <StarsBackground /> {/* here globally */}
           <Navbar />
           <main className="relative z-10 container mx-auto px-4 py-8">
             {children}

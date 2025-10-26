@@ -5,9 +5,7 @@ import { Home, User,Code, Briefcase, GraduationCap, Laptop2, Mail, Menu, X } fro
 
 const links = [
   { href: '#home', label: 'Home', icon: <Home size={18} /> },
-  { href: '#about', label: 'About', icon: <User size={18} /> },
   { href: '#skills', label: 'Skills', icon: <Code size={18} /> },
-  { href: '#education', label: 'Education', icon: <GraduationCap size={18} /> },
   { href: '#projects', label: 'Projects', icon: <Laptop2 size={18} /> },
   { href: '#contact', label: 'Contact', icon: <Mail size={18} /> },
 ]

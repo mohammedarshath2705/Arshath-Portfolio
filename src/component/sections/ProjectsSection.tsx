@@ -49,6 +49,18 @@ const projects = [
       code: 'https://github.com/mohammedarshath2705/SpringBoot-Projects/tree/assignment/DigitalLibrary',
     },
   },
+  {
+    title: 'Weather App',
+    category: 'Frontend',
+    description:
+      'A sleek and responsive weather app built with React, Vite, and Tailwind CSS. It fetches real-time weather data and displays temperature, humidity, and weather conditions based on user input.',
+    image: '/WeatherApp_images.png',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'OpenWeatherMap API', 'Vercel'],
+    links: {
+      live: 'https://weather-app-swart-eight-11.vercel.app/',
+      code: 'https://github.com/mohammedarshath2705/WeatherApp',
+    },
+  },
 ]
 
 export default function ProjectsSection() {
@@ -57,9 +69,12 @@ export default function ProjectsSection() {
       id="projects"
       className="min-h-screen w-full px-4 py-16 flex flex-col items-center"
     >
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Projects</h2>
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+        Projects
+      </h2>
       <p className="text-muted-foreground text-center max-w-2xl mb-12">
-        Here's a selection of projects that showcase my skills and passion for building exceptional digital experiences.
+        Here's a selection of projects that showcase my skills and passion for
+        building exceptional digital experiences.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
@@ -157,16 +172,18 @@ export default function ProjectsSection() {
                 </a>
               )}
 
-              {project.links.code && !project.links.frontend && !project.links.backend && (
-                <a
-                  href={project.links.code}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm flex items-center gap-1 text-teal-400 hover:underline"
-                >
-                  Code <FaCode size={14} />
-                </a>
-              )}
+              {project.links.code &&
+                !project.links.frontend &&
+                !project.links.backend && (
+                  <a
+                    href={project.links.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm flex items-center gap-1 text-teal-400 hover:underline"
+                  >
+                    Code <FaCode size={14} />
+                  </a>
+                )}
             </div>
           </div>
         ))}
